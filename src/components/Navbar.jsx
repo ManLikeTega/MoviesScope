@@ -2,7 +2,6 @@ import { useState } from "react";
 import { IoIosPlayCircle } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiCloseLargeFill } from "react-icons/ri";
-
 import { Link } from "react-router";
 import SearchBar from "./SearchBar";
 
@@ -15,7 +14,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             <div className="flex justify-between items-center gap-10">
               <Link to="/" className="text-xl flex items-center gap-2">
-                <IoIosPlayCircle className="text-accent text-5xl" />
+                <IoIosPlayCircle className="text-accent text-3xl md:text-5xl" />
                 <p>
                   Movies<span className="text-accent">Scope</span>
                 </p>
