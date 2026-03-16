@@ -6,7 +6,11 @@ function Utilities() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setVisible(window.scrollY > 300);
+      setVisible(
+        window.scrollY > 300 &&
+          window.scrollY + window.innerHeight <
+            document.documentElement.scrollHeight - 100,
+      );
     };
 
     window.addEventListener("scroll", handleScroll);
