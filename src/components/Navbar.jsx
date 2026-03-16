@@ -17,7 +17,7 @@ const Navbar = () => {
               <Link to="/" className="text-xl flex items-center gap-2">
                 <IoIosPlayCircle className="text-accent text-5xl" />
                 <p>
-                  Movie<span className="text-accent">Scope</span>
+                  Movies<span className="text-accent">Scope</span>
                 </p>
               </Link>
 
