@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "tailwindcss";
+/* -[#01b4e4] to-[#7dd3fc] */
+@theme {
+  /* Primary Colors */
+  --color-primary: #0d253f;
+  --color-accent: #01b4e4;
+  --color-background: #f5f7fa;
+
+  /* Text Colors */
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+
+  /* UI Element Colors */
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-muted: #f5f7fa;
+  --color-muted-foreground: #6b7280;
+
+  /* Dark Mode Colors */
+  --color-dark-primary: #1a3a52;
+  --color-dark-accent: #00a5cf;
+  --color-dark-background: #0d1117;
+  --color-dark-card-background: #161b22;
+  --color-dark-text-primary: #f5f7fa;
+  --color-dark-text-secondary: #9ca3af;
+  --color-dark-border: rgba(255, 255, 255, 0.1);
+  --color-dark-muted: #1a1f26;
+
+  /* Fonts */
+  --font-primary: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", sans-serif;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+@layer base {
+  body {
+    @apply font-primary bg-background text-text-primary;
+  }
+
+  .nav-link_lg {
+    @apply capitalize tracking-wider px-2 opacity-70 hover:opacity-100;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
